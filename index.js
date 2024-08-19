@@ -21,7 +21,6 @@ app.get('/', (req, res) => {
 
 // your first API endpoint...
 app.get('/api/whoami', (req, res) => {
-  console.log(Object.keys(req));
   res.json({ 
     ipaddress: req.ip,
     language: req.acceptsLanguages()[0],
